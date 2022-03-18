@@ -1,31 +1,34 @@
 <template>
   <div>
-    <h1>Home</h1>
-    <ChatContainer />
-    <ProductsContainer />
+    <NavbarComponent />
+    <div id="layoutSidenav">
+      <SlidebarComponent />
+      <div id="layoutSidenav_content">
+        <main>
+          <MainComponent />
+        </main>
+        <FooterComponent />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import ChatContainer from '@/modules/chat';
-import ProductsContainer from '@/modules/products';
+import NavbarComponent from '@/views/layouts/NavbarComponent';
+import SlidebarComponent from '@/views/layouts/SlidebarComponent';
+import MainComponent from '@/views/layouts/MainComponent';
+import FooterComponent from '@/views/layouts/FooterComponent';
 
 export default {
   name: 'Home',
   components: {
-    ChatContainer,
-    ProductsContainer,
+    NavbarComponent,
+    SlidebarComponent,
+    MainComponent,
+    FooterComponent,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  font-weight: 100;
-  font-size: 3em;
-  letter-spacing: 0.05em;
-  color: #4b4b4b;
-}
 </style>

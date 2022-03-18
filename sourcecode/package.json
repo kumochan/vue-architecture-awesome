@@ -80,7 +80,7 @@
   "name": "vue-architecture-awesome",
   "repository": {
     "type": "git",
-    "url": "https://github.com/igeligel/vue-architecture-awesome"
+    "url": "https://github.com/kumochan/vue-architecture-awesome"
   },
   "scripts": {
     "build": "node build/build.js",

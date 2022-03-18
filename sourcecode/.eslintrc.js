@@ -23,6 +23,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+    "vue/no-multiple-template-root": "off",
     // don't require .vue extension when importing
     'import/extensions': [
       'error',
